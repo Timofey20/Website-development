@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Stolzl-Regular.ttf");
+}
+@font-face {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/GothamPro.ttf");
+}
+@font-face {
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Stolzl-Light.ttf");
+}
+@font-face {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/GothamPro-Bold.ttf");
+}
+
+/* #region font*/
+
+.title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: left;
+
+  color: #ffffff;
+  & span {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 72px;
+    text-align: left;
+  }
+}
+.subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px;
+  text-align: left;
+  color: #ffffff;
+}
+.text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.number {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+.button-text {
+  font-family: Gotham Pro;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+}
+.imgBox__title {
+  font-family: Stolzl;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+}
+.imgBox__text {
+  font-family: Stolzl;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+.imgBox__text-bold {
+  font-family: Gotham Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+}
+/* #endregion font*/
