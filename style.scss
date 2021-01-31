@@ -64,13 +64,16 @@ body {
 }
 .item-header__nav {
   margin-right: 40px;
-  transition: 0.2s;
   &:last-child {
     margin-right: 0px;
   }
-  &:hover {
-    transform: translate(5px, -3px);
+  & p {
+    text-align: left;
   }
+}
+.item-header__link:hover p {
+  transform: translate(5px, -3px);
+  transition: 0.2s;
 }
 .item-header__number {
   margin-right: 45px;
@@ -418,15 +421,12 @@ body {
     }
   }
   .imgBox__title {
-    font-size: 18px;
     line-height: 20px;
   }
   .imgBox__text {
-    font-size: 10px;
     line-height: 14px;
   }
   .imgBox__text-bold {
-    font-size: 14px;
     font-weight: 600;
     line-height: 18px;
   }
@@ -478,19 +478,15 @@ body {
     padding: 15px 15px 13px 10px;
   }
   .title {
-    font-size: 32px;
     line-height: 60px;
     & span {
-      font-size: 28px;
       line-height: 60px;
     }
   }
   .subtitle {
-    font-size: 18px;
     line-height: 28px;
   }
   .number {
-    font-size: 18px;
     line-height: 14px;
     text-align: center;
     color: #ffffff;

@@ -23,10 +23,18 @@
   src: url("./fonts/GothamPro-Bold.ttf");
 }
 
+$maxWidth: 1920;
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+  );
+}
 /* #region font*/
 
 .title {
-  font-size: 48px;
+  @include adaptiv-font(48, 32);
   font-style: normal;
   font-weight: 400;
   line-height: 72px;
@@ -34,7 +42,8 @@
 
   color: #ffffff;
   & span {
-    font-size: 48px;
+    @include adaptiv-font(48, 28);
+
     font-style: normal;
     font-weight: 300;
     line-height: 72px;
@@ -42,7 +51,8 @@
   }
 }
 .subtitle {
-  font-size: 24px;
+  @include adaptiv-font(24, 18);
+
   font-style: normal;
   font-weight: 300;
   line-height: 36px;
@@ -59,7 +69,8 @@
   text-decoration: none;
 }
 .number {
-  font-size: 18px;
+  @include adaptiv-font(18, 16);
+
   font-style: normal;
   font-weight: 300;
   line-height: 28px;
@@ -78,7 +89,8 @@
 }
 .imgBox__title {
   font-family: Stolzl;
-  font-size: 22px;
+  @include adaptiv-font(22, 18);
+
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
@@ -86,7 +98,8 @@
 }
 .imgBox__text {
   font-family: Stolzl;
-  font-size: 12px;
+  @include adaptiv-font(12, 10);
+
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -94,7 +107,8 @@
 }
 .imgBox__text-bold {
   font-family: Gotham Pro;
-  font-size: 18px;
+  @include adaptiv-font(18, 14);
+
   font-style: normal;
   font-weight: 700;
   line-height: 22px;

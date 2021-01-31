@@ -24,7 +24,7 @@
 }
 /* #region font*/
 .title {
-  font-size: 48px;
+  font-size: calc( 32px + 16 * ((100vw - 320px) / 1600) );
   font-style: normal;
   font-weight: 400;
   line-height: 72px;
@@ -32,7 +32,7 @@
   color: #ffffff;
 }
 .title span {
-  font-size: 48px;
+  font-size: calc( 28px + 20 * ((100vw - 320px) / 1600) );
   font-style: normal;
   font-weight: 300;
   line-height: 72px;
@@ -40,7 +40,7 @@
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: calc( 18px + 6 * ((100vw - 320px) / 1600) );
   font-style: normal;
   font-weight: 300;
   line-height: 36px;
@@ -59,7 +59,7 @@
 }
 
 .number {
-  font-size: 18px;
+  font-size: calc( 16px + 2 * ((100vw - 320px) / 1600) );
   font-style: normal;
   font-weight: 300;
   line-height: 28px;
@@ -80,7 +80,7 @@
 
 .imgBox__title {
   font-family: Stolzl;
-  font-size: 22px;
+  font-size: calc( 18px + 4 * ((100vw - 320px) / 1600) );
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
@@ -89,7 +89,7 @@
 
 .imgBox__text {
   font-family: Stolzl;
-  font-size: 12px;
+  font-size: calc( 10px + 2 * ((100vw - 320px) / 1600) );
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -98,7 +98,7 @@
 
 .imgBox__text-bold {
   font-family: Gotham Pro;
-  font-size: 18px;
+  font-size: calc( 14px + 4 * ((100vw - 320px) / 1600) );
   font-style: normal;
   font-weight: 700;
   line-height: 22px;
@@ -179,13 +179,17 @@ body {
 
 .item-header__nav {
   margin-right: 40px;
-  transition: 0.2s;
 }
 .item-header__nav:last-child {
   margin-right: 0px;
 }
-.item-header__nav:hover {
+.item-header__nav p {
+  text-align: left;
+}
+
+.item-header__link:hover p {
   transform: translate(5px, -3px);
+  transition: 0.2s;
 }
 
 .item-header__number {
@@ -565,17 +569,14 @@ body {
   }
 
   .imgBox__title {
-    font-size: 18px;
     line-height: 20px;
   }
 
   .imgBox__text {
-    font-size: 10px;
     line-height: 14px;
   }
 
   .imgBox__text-bold {
-    font-size: 14px;
     font-weight: 600;
     line-height: 18px;
   }
@@ -633,21 +634,17 @@ body {
   }
 
   .title {
-    font-size: 32px;
     line-height: 60px;
   }
   .title span {
-    font-size: 28px;
     line-height: 60px;
   }
 
   .subtitle {
-    font-size: 18px;
     line-height: 28px;
   }
 
   .number {
-    font-size: 18px;
     line-height: 14px;
     text-align: center;
     color: #ffffff;
