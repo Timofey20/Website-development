@@ -196,7 +196,7 @@ body {
   margin-right: 45px;
 }
 
-.item-header__button {
+.item-header__contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -207,8 +207,9 @@ body {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.item-header__button:focus {
+.item-header__contact:focus {
   outline: none;
+  text-decoration: none;
 }
 
 .item-header__svg {

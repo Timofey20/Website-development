@@ -78,7 +78,7 @@ body {
 .item-header__number {
   margin-right: 45px;
 }
-.item-header__button {
+.item-header__contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,6 +91,7 @@ body {
   cursor: pointer;
   &:focus {
     outline: none;
+    text-decoration: none;
   }
 }
 .item-header__svg {
